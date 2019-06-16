@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Progressive Enhancement</title>
+        <meta name="description" content="A project about Progressive Enhancement. Part of the Tech Course given at CMDA">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/mainStyle.css">
+    </head>
+    <body>
+            <header>
+                    <nav class="main-navigation">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="JavaScript101.html">JavaScript 101</a></li>
+                            <li><a href="contact.html">Contact Me!</a></li>
+                        </ul>
+                    </nav>
+                </header>
+        <section class="firstBlock">
+            <h1>JavaScript 101</h1>
+            <p>JavaScript can be really intimidating at first. But you will get their with this perfectly tailored tutorial!</p>
+        </section>
+
+        <main class="grid-container">
+            <section class="chapter">
+                <img>
+                <h2>Chapter 1: The Basics</h2>
+                <h3>In this course we will learn:</h3>
+                <ul class="skillpoints">
+                    <li>What JavaScript is</li>
+                    <li>Why we use JavaScript</li>
+                    <li>How we use JavaScript</li>
+                </ul>
+                <h4>What is JavaScript</h4>
+                <p>JavaScript is what is called 
+                    a Client-side Scripting Language. 
+                    That means that it is a computer programming 
+                    language that runs inside an Internet browser 
+                    (a browser is also known as a Web client because 
+                    it connects to a Web server to download pages).
+                    <a href="https://computer.howstuffworks.com/javascript.htm">Source</a>
+                </p>
+                <h4>Why do we use JavaScript</h4>
+                <p>Let’s take a step back and count the merits of JavaScript:</p>
+                <ul>
+                    <li>JavaScript is very easy to implement. All you need to do is put your code in the HTML document and tell the browser that it is JavaScript.</li>
+                    <li>JavaScript works on web users’ computers — even when they are offline!</li>
+                    <li>JavaScript allows you to create highly responsive interfaces that improve the user experience and provide dynamic functionality, without having to wait for the server to react and show another page.</li>
+                    <li>JavaScript can load content into the document if and when the user needs it, without reloading the entire page — this is commonly referred to as Ajax.</li>
+                    <li>JavaScript can test for what is possible in your browser and react accordingly — this is called Principles of unobtrusive JavaScript or sometimes defensive scripting.</li>
+                    <li>JavaScript can help fix browser problems or patch holes in browser support — for example fixing CSS layout issues in certain browsers.</li>
+                </ul>
+                    <a href="https://webplatform.github.io/docs/concepts/programming/the_purpose_of_javascript/">Source</a>               
+                </p>
+                <h4>How do we use JavaScript</h4>
+                <p>
+                    You can add JavaScript code in an HTML document by employing the dedicated HTML tag &lt;script&gt; that wraps around JavaScript code.
+                </p>
+                <p> The &lt;script&gt; tag can be placed in the &lt;head&gt; section of your HTML, in the &lt;body&gt; section, or after the &lt;/body&gt; close tag, depending on when you want the JavaScript to load.
+
+                </p>
+                <p>
+                    Generally, JavaScript code can go inside of the document &lt;head&gt; section in order to keep them contained and out of the main content of your HTML document.
+                    However, if your script needs to run at a certain point within a page&rsquo;s layout &mdash; like when using document.write to generate content &mdash; you should put it at the point where it should be called, usually within the &lt;body&gt; section. <a href="https://www.digitalocean.com/community/tutorials/how-to-add-javascript-to-html">Source</a>
+                </p>
+            </section>
+        </main>
+
+        <script src="" async defer></script>
+    </body>
+</html>

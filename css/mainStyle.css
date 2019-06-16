@@ -1,0 +1,142 @@
+body{
+    background: #ffffff ;
+    background: -moz-linear-gradient(top, #5D83CE 0%, #ffffff  28%);
+    background: -webkit-linear-gradient(top, #5D83CE 0%, #ffffff  28%);
+    background: linear-gradient(to bottom, #5D83CE 0%, #ffffff 28%);
+    background-repeat: no-repeat;
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+main.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 2em;
+    grid-column-gap: 2em;
+
+}
+main > section{
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(168, 168, 168, 0.356);
+    box-shadow: 0.5em 1em 1.5em 0em rgba(168, 168, 168, 0.356);
+    padding: 1em;
+    margin-left:2.5%;
+    margin-right:2.5%;
+    border-radius: 0% 0% 0% 0%;
+    border-top: solid rgba(0, 0, 0, 0.342) 5px;
+}
+
+
+section.chapter{
+    background-color: white;
+    text-align: center;
+}
+
+section.chapter h2{
+    font-size: 2em;
+}
+
+section.chapter p{
+    width: 67.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.chapter ul{
+    list-style: circle;
+    text-align: left;
+    width: 80%;
+    background-color: #5D83CE;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+section.chapter ul li{
+    padding-top:1em;
+    font-size: 1em;
+
+}
+
+section.chapter ul li:last-child{
+    padding-bottom: 1em;
+}
+
+section ul.skillpoints{
+    list-style-type: none;
+}
+
+section ul.skillpoints li{
+    height: 2em;
+    border-bottom: solid white 1px;
+}
+
+section ul.skillpoints li:last-child{
+    border-bottom: none;
+}
+
+
+.firstBlock {
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(168, 168, 168, 0.356);
+    box-shadow: 0.5em 1em 1.5em 0em rgba(168, 168, 168, 0.356);
+    border-top: solid rgba(0, 0, 0, 0.342) 5px;
+    background-color: white;
+    margin: 1em;
+    text-align: center;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-radius: 0% 0% 0% 15%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style the navigation menu */
+nav{
+    margin: 0;
+}
+.main-navigation{
+    background-color: #555;
+    margin: none;
+}
+.main-navigation > ul {
+    background-color: #555;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    height: 2em;
+    margin: 0;
+    padding-top:1.5em;
+  }
+  
+  /* Navigation links */
+  .main-navigation a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 33%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+  
+  /* Add a background color on mouse-over */
+  .main-navigation a:hover {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  /* Style the current/active link */
+  .main-navigation a.active {
+    background-color: #4CAF50;
+  }
+  
+  
