@@ -1,15 +1,30 @@
 body{
     background: #ffffff ;
-    background: -moz-linear-gradient(top, #5D83CE 0%, #ffffff  28%);
-    background: -webkit-linear-gradient(top, #5D83CE 0%, #ffffff  28%);
-    background: linear-gradient(to bottom, #5D83CE 0%, #ffffff 28%);
+    background: -moz-linear-gradient(top, #60F4A0 0%, #004682  100%);
+    background: -webkit-linear-gradient(top, #60F4A0 0%, #004682  100%);
+    background: linear-gradient(to bottom, #60F4A0 0%, #004682 100%);
     background-repeat: no-repeat;
 }
 
 *{
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
 }
 
+h1, h2, h3, h4, h5, h6{
+    background: black;
+    color: white;
+    display: table;
+    margin: auto;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
 
 main.grid-container{
     display: grid;
@@ -21,7 +36,7 @@ main.grid-container{
 }
 main > section{
     -webkit-box-shadow: 10px 10px 10px 1px rgba(168, 168, 168, 0.356);
-    box-shadow: 0.5em 1em 1.5em 0em rgba(168, 168, 168, 0.356);
+    box-shadow: 0.5em 1em 1.5em 0em rgba(255, 255, 255, 0.100);
     padding: 1em;
     margin-left:2.5%;
     margin-right:2.5%;
@@ -29,10 +44,24 @@ main > section{
     border-top: solid rgba(0, 0, 0, 0.342) 5px;
 }
 
+main > *{
+    color: white;
+}
+
+main a{
+    color: black;
+}
+
+main a:hover{
+    color: #60F4A0;r
+}
+
 
 section.chapter{
-    background-color: white;
+    background-color: rgba(96, 244, 160, 0.158);
     text-align: center;
+    border-radius:0 0 1% 1%;
+
 }
 
 section.chapter h2{
@@ -40,16 +69,17 @@ section.chapter h2{
 }
 
 section.chapter p{
-    width: 67.5%;
+    max-width: 40em;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 section.chapter ul{
     list-style: circle;
     text-align: left;
-    width: 80%;
-    background-color: #5D83CE;
+    max-width: 40em;
+    background-color: #0370b7;
     color: white;
     display: block;
     margin-left: auto;
@@ -85,16 +115,24 @@ section ul.skillpoints li:last-child{
 .firstBlock {
     -webkit-box-shadow: 10px 10px 10px 1px rgba(168, 168, 168, 0.356);
     box-shadow: 0.5em 1em 1.5em 0em rgba(168, 168, 168, 0.356);
-    border-top: solid rgba(0, 0, 0, 0.342) 5px;
-    background-color: white;
-    margin: 1em;
+    border-top: solid rgb(0, 0, 0) 5px;
+    border-bottom: solid rgb(0, 0, 0) 5px;
+    background-color: #60F4A0;
     text-align: center;
     margin-bottom: 2em;
     padding-bottom: 2em;
-    border-radius: 0% 0% 0% 15%;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.firstBlock h1{
+    background-color:black;
+}
+
+.firstBlock p{
+    width: 55%;
+    margin: auto;
 }
 
 /* Style the navigation menu */
@@ -102,18 +140,19 @@ nav{
     margin: 0;
 }
 .main-navigation{
-    background-color: #555;
     margin: none;
 }
 .main-navigation > ul {
-    background-color: #555;
+    background-color: black;
     display: flex;
     justify-content: space-around;
     list-style: none;
     height: 2em;
     margin: 0;
     padding-top:1.5em;
+    padding-bottom: 1.5em;
   }
+
   
   /* Navigation links */
   .main-navigation a {
@@ -122,21 +161,58 @@ nav{
     color: white;
     text-decoration: none;
     font-size: 1.5em;
-    width: 33%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    width: 33%;
     text-align: center; /* If you want the text to be centered */
   }
   
   /* Add a background color on mouse-over */
   .main-navigation a:hover {
-    background-color: #000;
-    width: 100%;
-    height: 100%;
+    color: #60F4A0
   }
 
-  
-  /* Style the current/active link */
-  .main-navigation a.active {
-    background-color: #4CAF50;
+
+  .summary {
+      margin-bottom: 2em;
+      padding-top: 1em;
+      display: block;
+      width: 80%;
+      margin: auto;
   }
-  
-  
+
+
+
+  footer{
+      height: 4em;
+      margin: auto;
+      text-align:center;
+      color: white;
+  }
+
+  form{
+      height: 100%;
+      width:50%;
+      margin: auto;
+      display: block;
+      color: white;
+      background-color:rgba(0, 0, 0, 0.226);
+      border-radius: 5%;
+      padding: 2em;
+  }
+
+  form fieldset{
+      border: none;
+  }
+
+  form input {
+        width: 100%;
+        padding: 1em 2em;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      form input.messagebox{
+          height: 10em;
+      }

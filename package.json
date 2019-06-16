@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/robert-hoekstra/fe-assessment-2#readme",
   "dependencies": {
+    "jquery": "^3.4.1",
     "normalize.css": "^8.0.1"
   }
 }

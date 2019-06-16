@@ -9,36 +9,46 @@
         <link rel="stylesheet" href="../css/mainStyle.css">
     </head>
     <body>
-        <header>
-            <nav class="mainNavigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="JavaScript101.html">JavaScript 101</a></li>
-                    <li><a href="contact.html">Contact Me!</a></li>
-                    <li><button>'Enable Accessibility-Mode'</button></li>
-                </ul>
-            </nav>
-        </header>
+            <header>
+                    <nav class="main-navigation">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="JavaScript101.html">JavaScript 101</a></li>
+                            <li><a href="contact.html">Contact Me!</a></li>
+                        </ul>
+                    </nav>
+                </header>
         <section class="firstBlock">
             <h1>Use this contact-form to message me.</h1>
             <p>Discovered anything good or wrong? Please let me know by filling the form below!</p>
         </section>
 
         <main>
-            <form action="index.html" method="post" class="contactform">
-                <fieldset>
-                    <label>
-                        <input type="text" value="Your name goes here">
-                    </label>
-
-                    <label>
-                        <input type="text" value="Here goes your message">
-                    </label>
-                </fieldset>
-                <button>Send this message!</button>
-            </form>
+                <form action="index.html" method="POST">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  
+                    <label for="subject">Choose a subject</label>
+                    <select id="subject" name="subject">
+                      <option value="question">Question</option>
+                      <option value="bug">Report bug</option>
+                      <option value="thanks">Say Thanks</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="message">Your Message</label>
+                    <input type="text" id="message" name="message" class="messagebox" placeholder="You can write anything you want!">
+                    <input type="submit" value="Submit">
+                  </form>
         </main>
 
-        <script src="" async defer></script>
+
+        <footer><p>
+                Developed by Robert F. Hoekstra.</p>
+            </footer>
+
     </body>
 </html>
