@@ -96,8 +96,9 @@ section.chapter ul li{
 section.chapter ul li:hover, section.chapter ul li:focus{
     padding-top:1em;
     font-size: 1em;
-    background-color:black;
+    background-color:yellow;
     color: black;
+    border: dashed black 1px;
 }
 
 section.chapter ul li:last-child{
