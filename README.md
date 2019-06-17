@@ -1,6 +1,8 @@
 # fe-assessment-2
 This repo is created to demonstrate Progressive Enhancement for the Frontend 2 Course given at CMDA during the Tech Project.
 
+![JavaScript 101](https://i.imgur.com/TnjjyMd.png)
+
 ## Table of Contents
 
 ## JavaScript 101
